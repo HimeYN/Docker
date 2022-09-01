@@ -1,5 +1,5 @@
 pipeline {
-    agent agent1
+    agent1
     //tools { maven "maven-3.8.6" }
     stages {
 
