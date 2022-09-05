@@ -28,7 +28,7 @@ pipeline {
             echo 'Deploying....'
             
             script {
-                deploy adapters: [tomcat9(credentialsId: "736b7f03-5044-4541-8689-98925309f0c5", path: "", url: "http://localhost:8080")], contextPath: "/pipeline", onFailure: false, war: "**/*.war"
+                deploy adapters: [tomcat9(credentialsId: 'f03890ae-094e-4f69-9aa1-e6a4d1b94e54', path: '', url: 'http://172.17.0.2:8080')], contextPath: '/spark', onFailure: false, war: '**/*.war' 
                 } 
            
             }
